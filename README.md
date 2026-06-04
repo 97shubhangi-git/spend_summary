@@ -1,14 +1,22 @@
 # Spend Summary App
 
-A Flutter take-home assignment that implements a Spend Summary screen with mock data, a monthly spend hero card, a horizontal category scroller, a recent transactions list, and a floating action button.
+A Flutter take-home assignment that implements a modern Spend Summary screen using mock data. The application includes a monthly spend overview, category-wise spending insights, recent transactions, smooth animations, and a floating action button.
 
 ## Features
 
-- Monthly spend summary card with percentage change vs last month
-- Horizontally scrollable category cards with icons and spend totals
-- Recent transactions section driven by hardcoded mock data
-- Category tap interaction with animated filtering
-- Floating action button for the add-expense entry point
+* Monthly spend summary card displaying total spend and percentage change compared to the previous month
+* Horizontally scrollable spending categories with icons and spend totals
+* Recent transactions list using hardcoded mock data
+* Category-based transaction filtering with smooth animations
+* Modern UI built with Material 3 and custom styling
+* Floating Action Button (FAB) for future expense entry flow
+
+## Tech Stack
+
+* Flutter
+* Dart
+* Material 3
+* Google Fonts
 
 ## Run Locally
 
@@ -20,23 +28,41 @@ flutter run
 ## Validation
 
 ```bash
-flutter test
 flutter analyze
+flutter test
 ```
 
 ## AI Usage Note
 
-Built with GitHub Copilot using GPT-5.4. I used AI to scaffold the Flutter project, generate and refine the UI implementation, update the widget test, and help document the project. Final code, validation, and screenshot capture were reviewed and executed in the local environment.
+AI tools were used to assist with UI brainstorming, code refinement, animation ideas, widget structure, and documentation. All implementation, testing, validation, and final review were completed manually before submission.
 
 ## Screenshots
 
-Captured on the Android emulator `Medium Phone API 36.1`.
+Captured on Android Emulator.
 
-- Overview: `screenshots/spend-summary-home.png`
-- Category interaction: `screenshots/spend-summary-category.png`
+### Home Screen
+
+![Home Screen](screenshots/home_screen.png)
+
+### Category Filtering
+
+![Category Filtering](screenshots/category_filter.png)
+
+### Transactions Filtering
+
+![Transactions List](screenshots/transactions_list.png)
+![Transactions List](screenshots/transactions_list2.png)
+
 
 ## Project Structure
 
-- `lib/main.dart`: main screen implementation and hardcoded mock data
-- `test/widget_test.dart`: widget test for rendering and category filtering
-- `screenshots/`: emulator screenshots included for submission
+lib/
+├── main.dart
+├── screenshots/
+└── test/
+
+## Notes
+
+* Uses hardcoded/mock data as requested.
+* No backend integration.
+* Focused on clean UI, smooth interactions, and responsive design.
